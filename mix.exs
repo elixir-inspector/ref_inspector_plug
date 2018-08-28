@@ -9,6 +9,7 @@ defmodule RefInspector.Plug.Mixfile do
       name: "RefInspector Plug",
       version: "0.1.0-dev",
       elixir: "~> 1.3",
+      aliases: aliases(),
       deps: deps(),
       description: "RefInspector Plug",
       docs: docs(),
@@ -23,6 +24,15 @@ defmodule RefInspector.Plug.Mixfile do
   end
 
   def application, do: []
+
+  defp aliases do
+    [
+      test: [
+        "ref_inspector.download --force",
+        "test"
+      ]
+    ]
+  end
 
   defp deps do
     [
