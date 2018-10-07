@@ -23,6 +23,12 @@ defmodule RefInspector.Plug.Mixfile do
     ]
   end
 
+  def application do
+    [
+      extra_applications: [:plug]
+    ]
+  end
+
   defp aliases do
     [
       test: [
