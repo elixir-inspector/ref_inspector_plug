@@ -8,7 +8,7 @@ defmodule RefInspector.Plug.Mixfile do
       app: :ref_inspector_plug,
       name: "RefInspector Plug",
       version: "0.1.0-dev",
-      elixir: "~> 1.3",
+      elixir: "~> 1.5",
       aliases: aliases(),
       deps: deps(),
       description: "RefInspector Plug",
