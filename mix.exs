@@ -25,7 +25,7 @@ defmodule RefInspector.Plug.Mixfile do
 
   def application do
     [
-      extra_applications: [:plug]
+      extra_applications: [:plug, :ref_inspector]
     ]
   end
 
