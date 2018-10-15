@@ -2,13 +2,13 @@
 
 ## Package Setup
 
-Add both `:ref_inspector_plug` and `:ref_inspector` as dependencies
-to your `mix.exs` file:
+Ensure all required dependencies are listed in your `mix.exs`:
 
 ```elixir
 defp deps do
   [
     # ...
+    {:plug, "~> 1.0"},
     {:ref_inspector, "~> 0.20"},
     {:ref_inspector_plug, "~> 0.1"}
     # ...
