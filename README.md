@@ -9,7 +9,7 @@ defp deps do
   [
     # ...
     {:plug, "~> 1.0"},
-    {:ref_inspector, "~> 0.20"},
+    {:ref_inspector, "~> 1.0"},
     {:ref_inspector_plug, "~> 0.1"}
     # ...
   ]

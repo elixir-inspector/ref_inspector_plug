@@ -44,7 +44,7 @@ defmodule RefInspector.Plug.Mixfile do
       {:ex_doc, ">= 0.0.0", only: :dev},
       {:excoveralls, "~> 0.10", only: :test},
       {:plug, "~> 1.0", optional: true},
-      {:ref_inspector, "~> 0.20", optional: true}
+      {:ref_inspector, "~> 1.0", optional: true}
     ]
   end
 
