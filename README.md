@@ -47,8 +47,9 @@ Once setup the connection will be automatically enriched with the results of a l
 defmodule MyRouter do
   get "/" do
     case RefInspector.Plug.get_result(conn) do
-      %{source: source} -> send_resp(conn, 200, "Client source: #{source}")
-      _ -> send_resp(conn, 404, "Unknown source or missing referer")
+      %{referer: ""} -> send_resp(conn, 404, "Missing referer")
+      %{source: :unknown} -> send_resp(conn, 404, "Unknown referer")
+      %{source: source} -> send_resp(conn, 200, "Referer source: " <> source)
     end
   end
 end
