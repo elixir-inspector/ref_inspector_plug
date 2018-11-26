@@ -26,6 +26,7 @@ defmodule RefInspector.Plug do
       defmodule MyRouter do
         get "/" do
           case RefInspector.Plug.get_result(conn) do
+            nil -> send_resp(conn, 500, "No lookup done")
             %{referer: ""} -> send_resp(conn, 404, "Missing referer")
             %{source: :unknown} -> send_resp(conn, 200, "Unknown referer")
             %{source: source} -> send_resp(conn, 200, "Client source: " <> source)

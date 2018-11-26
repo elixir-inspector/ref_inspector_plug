@@ -21,6 +21,10 @@ defmodule RefInspector.PlugTest do
 
   @opts Router.init([])
 
+  test "nil result if no lookup performed" do
+    assert nil == conn(:get, "/") |> RefInspector.Plug.get_result()
+  end
+
   test "empty result for empty referer" do
     conn = conn(:get, "/") |> Router.call(@opts)
 
