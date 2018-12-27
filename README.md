@@ -2,15 +2,13 @@
 
 ## Package Setup
 
-Ensure all required dependencies are listed in your `mix.exs`:
+Add the library as a dependency to your `mix.exs` file:
 
 ```elixir
 defp deps do
   [
     # ...
-    {:plug, "~> 1.0"},
-    {:ref_inspector, "~> 1.0"},
-    {:ref_inspector_plug, "~> 0.1"}
+    {:ref_inspector_plug, "~> 0.1.0"}
     # ...
   ]
 end
