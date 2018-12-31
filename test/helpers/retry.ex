@@ -1,4 +1,6 @@
 defmodule RefInspector.Plug.TestHelpers.Retry do
+  @moduledoc false
+
   def retry(0, _, _, _), do: false
 
   def retry(timeout, delay, retry_call, retry_test) do
