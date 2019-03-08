@@ -37,8 +37,8 @@ defmodule RefInspector.Plug.Mixfile do
     [
       {:credo, "~> 1.0", only: :dev, runtime: false},
       {:dialyxir, "~> 1.0.0-rc", only: :dev, runtime: false},
-      {:ex_doc, ">= 0.0.0", only: :dev},
-      {:excoveralls, "~> 0.10", only: :test},
+      {:ex_doc, ">= 0.0.0", only: :dev, runtime: false},
+      {:excoveralls, "~> 0.10", only: :test, runtime: false},
       {:plug, "~> 1.0"},
       {:ref_inspector, "~> 1.0"}
     ]
