@@ -1,4 +1,4 @@
-defmodule RefInspector.Plug.Mixfile do
+defmodule RefInspector.Plug.MixProject do
   use Mix.Project
 
   @url_github "https://github.com/elixir-inspector/ref_inspector_plug"
