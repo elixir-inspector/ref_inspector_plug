@@ -27,7 +27,7 @@ defmodule RefInspector.Plug.MixProject do
   defp aliases do
     [
       test: [
-        "ref_inspector.download --force",
+        "ref_inspector.download --force --quiet",
         "test"
       ]
     ]
