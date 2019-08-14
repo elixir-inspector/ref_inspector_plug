@@ -9,7 +9,6 @@ defmodule RefInspector.Plug.MixProject do
       name: "RefInspector Plug",
       version: "0.2.0-dev",
       elixir: "~> 1.5",
-      aliases: aliases(),
       deps: deps(),
       description: "RefInspector Plug",
       docs: docs(),
@@ -21,15 +20,6 @@ defmodule RefInspector.Plug.MixProject do
         "coveralls.travis": :test
       ],
       test_coverage: [tool: ExCoveralls]
-    ]
-  end
-
-  defp aliases do
-    [
-      test: [
-        "ref_inspector.download --force --quiet",
-        "test"
-      ]
     ]
   end
 
