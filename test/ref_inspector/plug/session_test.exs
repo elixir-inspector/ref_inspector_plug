@@ -34,7 +34,7 @@ defmodule RefInspector.Plug.SessionTest do
       |> Router.call(@opts)
 
     assert %RefInspector.Result{
-             referer: referer,
+             referer: ^referer,
              source: "Google"
            } = RefInspector.Plug.get_result(conn)
   end

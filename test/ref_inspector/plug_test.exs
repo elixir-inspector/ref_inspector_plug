@@ -46,9 +46,9 @@ defmodule RefInspector.PlugTest do
     assert 404 == conn.status
 
     assert %RefInspector.Result{
-             referer: referer,
+             referer: ^referer,
              source: :unknown
-           } == RefInspector.Plug.get_result(conn)
+           } = RefInspector.Plug.get_result(conn)
   end
 
   test "result for referer" do
@@ -62,7 +62,7 @@ defmodule RefInspector.PlugTest do
     assert 200 == conn.status
 
     assert %RefInspector.Result{
-             referer: referer,
+             referer: ^referer,
              source: "Google"
            } = RefInspector.Plug.get_result(conn)
   end
