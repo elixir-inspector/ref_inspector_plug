@@ -11,6 +11,7 @@ defmodule RefInspector.Plug.MixProject do
       elixir: "~> 1.7",
       deps: deps(),
       description: "RefInspector Plug",
+      dialyzer: dialyzer(),
       docs: docs(),
       elixirc_paths: elixirc_paths(Mix.env()),
       package: package(),
@@ -31,6 +32,17 @@ defmodule RefInspector.Plug.MixProject do
       {:excoveralls, "~> 0.13.0", only: :test, runtime: false},
       {:plug, "~> 1.0"},
       {:ref_inspector, "~> 1.0"}
+    ]
+  end
+
+  defp dialyzer do
+    [
+      flags: [
+        :error_handling,
+        :race_conditions,
+        :underspecs,
+        :unmatched_returns
+      ]
     ]
   end
 
