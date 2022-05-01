@@ -50,6 +50,7 @@ defmodule RefInspector.Plug.MixProject do
 
   defp docs do
     [
+      formatters: ["html"],
       main: "RefInspector.Plug",
       source_ref: "master",
       source_url: @url_github
