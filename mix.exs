@@ -51,6 +51,11 @@ defmodule RefInspector.Plug.MixProject do
 
   defp docs do
     [
+      extras: [
+        "CHANGELOG.md",
+        LICENSE: [title: "License"],
+        "README.md": [title: "Overview"]
+      ],
       formatters: ["html"],
       main: "RefInspector.Plug",
       source_ref: "v#{@version}",
