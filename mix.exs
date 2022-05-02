@@ -1,6 +1,7 @@
 defmodule RefInspector.Plug.MixProject do
   use Mix.Project
 
+  @url_changelog "https://hexdocs.pm/ref_inspector_plug/changelog.html"
   @url_github "https://github.com/elixir-inspector/ref_inspector_plug"
   @version "0.2.0-dev"
 
@@ -70,7 +71,10 @@ defmodule RefInspector.Plug.MixProject do
     %{
       files: ["CHANGELOG.md", "LICENSE", "mix.exs", "README.md", "lib"],
       licenses: ["Apache-2.0"],
-      links: %{"GitHub" => @url_github}
+      links: %{
+        "Changelog" => @url_changelog,
+        "GitHub" => @url_github
+      }
     }
   end
 end
