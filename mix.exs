@@ -40,7 +40,6 @@ defmodule RefInspector.Plug.MixProject do
     [
       flags: [
         :error_handling,
-        :race_conditions,
         :underspecs,
         :unmatched_returns
       ],
