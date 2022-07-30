@@ -31,7 +31,7 @@ defmodule RefInspector.PlugTest do
     assert 404 == conn.status
 
     assert %RefInspector.Result{
-             referer: ""
+             referer: nil
            } == RefInspector.Plug.get_result(conn)
   end
 

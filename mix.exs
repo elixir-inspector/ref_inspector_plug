@@ -32,7 +32,7 @@ defmodule RefInspector.Plug.MixProject do
       {:ex_doc, ">= 0.0.0", only: :dev, runtime: false},
       {:excoveralls, "~> 0.14.0", only: :test, runtime: false},
       {:plug, "~> 1.0"},
-      {:ref_inspector, "~> 1.0"}
+      {:ref_inspector, "~> 2.0"}
     ]
   end
 
