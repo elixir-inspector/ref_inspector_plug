@@ -20,14 +20,15 @@ defmodule RefInspector.Plug do
   Depending on how you are using plugs the actual location may vary.
   Please consult your frameworks documentation to find the proper place.
 
-  Once setup the connection will be automatically enriched with the results of
-  a lookup based on the connections `referer` header:
+  Once set up the connection will be automatically enriched with the
+  results of a lookup based on the connections `referer` header:
 
       defmodule MyRouter do
         get "/" do
           case RefInspector.Plug.get_result(conn) do
             nil -> send_resp(conn, 500, "No lookup done")
-            %{referer: ""} -> send_resp(conn, 404, "Missing referer")
+            %{referer: nil} -> send_resp(conn, 404, "Missing referer")
+            %{referer: ""} -> send_resp(conn, 404, "Empty referer")
             %{source: :unknown} -> send_resp(conn, 200, "Unknown referer")
             %{source: source} -> send_resp(conn, 200, "Client source: " <> source)
           end
