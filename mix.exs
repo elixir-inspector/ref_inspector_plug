@@ -3,7 +3,7 @@ defmodule RefInspector.Plug.MixProject do
 
   @url_changelog "https://hexdocs.pm/ref_inspector_plug/changelog.html"
   @url_github "https://github.com/elixir-inspector/ref_inspector_plug"
-  @version "0.2.0-dev"
+  @version "0.2.0"
 
   def project do
     [

@@ -8,7 +8,7 @@ Add the library as a dependency to your `mix.exs` file:
 defp deps do
   [
     # ...
-    {:ref_inspector_plug, "~> 0.1.0"}
+    {:ref_inspector_plug, "~> 0.2.0"}
     # ...
   ]
 end
