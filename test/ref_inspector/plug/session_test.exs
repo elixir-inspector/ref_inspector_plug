@@ -1,6 +1,8 @@
 defmodule RefInspector.Plug.SessionTest do
   use ExUnit.Case
-  use Plug.Test
+
+  import Plug.Conn
+  import Plug.Test
 
   alias RefInspector.Plug.TestHelpers.SessionStore
 
