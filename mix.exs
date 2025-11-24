@@ -10,7 +10,7 @@ defmodule RefInspector.Plug.MixProject do
       app: :ref_inspector_plug,
       name: "RefInspector Plug",
       version: @version,
-      elixir: "~> 1.11",
+      elixir: "~> 1.17",
       deps: deps(),
       description: "RefInspector Plug",
       dialyzer: dialyzer(),
